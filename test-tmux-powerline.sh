@@ -15,6 +15,7 @@ export TMUX_POWERLINE_WRAPPER_DIR
 source "$TMUX_POWERLINE_WRAPPER_DIR/config.sh"
 
 if [ "$(bash -c 'echo ${BASH_VERSINFO[0]}')" -lt 4 ]; then
+    echo "quitting because not bash"
     exit 1
 fi
 exit 0
